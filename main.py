@@ -5,7 +5,7 @@ import streamlit as st
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-  model=tf.keras.models.load_model('/content/my_model.h5')
+  model=tf.keras.models.load_model('https://github.com/Satoru90/GTSRB-CNN-Streamlit/blob/main/my_model.h5')
   return model
 with st.spinner('Model is being loaded..'):
   model=load_model()
